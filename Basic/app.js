@@ -1,9 +1,11 @@
 const http = require('http');
 
-
+    // console.log(req.url, req.method, req.headers);
+    // process.exit()
 
 const server = http.createServer((req, res) => {
-    console.log(req)
+ 
+    
 });
 
 server.listen(3000);
