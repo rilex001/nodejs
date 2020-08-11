@@ -1,11 +1,10 @@
 const Product = require('../models/product');
 
-exports.getAddProduct = (req, res, next) => {
+exports.getAddProduct = (req, res, next) => { 
   res.render('admin/edit-product', {
     pageTitle: 'Add Product',
     path: '/admin/add-product',
     editing: false,
-    isAuthenticated: req.isLoggedIn
   });
 };
 
@@ -49,7 +48,6 @@ exports.getEditProduct = (req, res, next) => {
         path: '/admin/edit-product',
         editing: editMode,
         product: product,
-        isAuthenticated: req.isLoggedIn
       });
     })
     .catch(err => console.log(err));
@@ -87,7 +85,6 @@ exports.getProducts = (req, res, next) => {
         prods: products,
         pageTitle: 'Admin Products',
         path: '/admin/products',
-        isAuthenticated: req.isLoggedIn
       });
     })
     .catch(err => console.log(err));
