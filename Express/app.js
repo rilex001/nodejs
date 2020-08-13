@@ -1,6 +1,7 @@
 const path = require('path');
 
 const express = require('express');
+
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
@@ -11,10 +12,10 @@ const flash = require('connect-flash')
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
-const MONGODB_URI =
-  'mongodb+srv://nikola:misarska8@cluster0.oo5b6.mongodb.net/shop';
+const MONGODB_URI = 'mongodb+srv://nikola:misarska8@cluster0.oo5b6.mongodb.net/shop';
 
 const app = express();
+
 const store = new MongoDBStore({
   uri: MONGODB_URI,
   collection: 'sessions'
