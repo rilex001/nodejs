@@ -22,7 +22,8 @@
     "nodemon": "^2.0.4",
     "pdfkit": "^0.11.0",
     "pug": "^3.0.0",
-    "sequelize": "^6.3.4"
+    "sequelize": "^6.3.4",
+    "stripe": "^8.86.0"
   },
   "devDependencies": {},
   "scripts": {
